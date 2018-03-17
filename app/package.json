@@ -1,0 +1,51 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "My Moleculer microservices project",
+  "scripts": {
+    "dev": "moleculer-runner --repl --hot services & npm run client",
+    "client": "parcel watch client/index.html --public-url ./",
+    "start": "moleculer-runner",
+    "ci": "jest --watch",
+    "test": "jest --coverage"
+  },
+  "keywords": [
+    "microservices",
+    "moleculer"
+  ],
+  "author": "",
+  "devDependencies": {
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-runtime": "^6.26.0",
+    "jest": "^22.4.2",
+    "jest-cli": "^22.4.2",
+    "moleculer-repl": "^0.4.0",
+    "parcel-bundler": "^1.6.2",
+    "standard": "^11.0.1"
+  },
+  "dependencies": {
+    "bulma": "^0.6.2",
+    "linkstate": "^1.1.1",
+    "moleculer": "^0.12.0",
+    "moleculer-bull": "^0.1.5",
+    "moleculer-db": "^0.7.1",
+    "moleculer-web": "^0.6.0",
+    "moleculer-zipkin": "file:lib/moleculer-zipkin",
+    "nats": "^0.8.2",
+    "preact": "^8.2.7",
+    "socket.io": "^2.0.4",
+    "socket.io-client": "^2.0.4",
+    "unfetch": "^3.0.0"
+  },
+  "engines": {
+    "node": ">= 6.x.x"
+  },
+  "jest": {
+    "coverageDirectory": "../coverage",
+    "testEnvironment": "node",
+    "rootDir": "./services",
+    "roots": [
+      "../test"
+    ]
+  }
+}
