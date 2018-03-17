@@ -8,7 +8,7 @@ module.exports = {
   logLevel: 'info',
   logFormatter: 'default',
 
-  // transporter: 'NATS',
+  transporter: 'NATS',
 
   cacher: 'Memory',
 
