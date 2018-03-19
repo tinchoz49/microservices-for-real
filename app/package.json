@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "My Moleculer microservices project",
   "scripts": {
-    "dev:node-one": "moleculer-runner --repl --hot services/db services/notification services/gateway services/health",
+    "block": "moleculer-runner --repl --hot services",
+    "dev:node-one": "moleculer-runner --repl --hot services/db services/notification services/gateway",
     "dev:node-two": "moleculer-runner --hot services/graphic",
     "client": "parcel watch client/index.html --public-url ./",
     "start": "moleculer-runner",

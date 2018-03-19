@@ -16,6 +16,15 @@
 ```
 $ cd app
 $ npm install
+```
+
+#### Example with poop blocking the process
+```
+$ npm run client & npm run block
+```
+
+#### Example with poop running in their own process
+```
 $ npm run client & npm run dev:node-one & npm run dev:node-two
 ```
 
