@@ -22,4 +22,5 @@ $ npm run client & npm run dev:node-one & npm run dev:node-two
 ## Contact
 
 [twitter](https://twitter.com/tinchoz49)
-[we can chat on LaPlataJS](https://laplatajs.herokuapp.com/)
+
+[we can chat in LaPlataJS](https://laplatajs.herokuapp.com/)
